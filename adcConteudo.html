@@ -1,77 +1,89 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Gestão de Cursos</title>
-        <link rel="stylesheet" href="styles.css">
-    </head>
+<html lang="en">
 
-    <body>
-        <nav>
-            <ul>
-                <li>
-                    <div>
-                        <img src= "img/Vector.png" alt="Gestão de conteúdo">
-                        <a href="#gestao-de-conteudo">Gestão de Conteúdo</a>
-                    </div>
-                </li>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestão de Cursos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
 
-                <li>
-                    <div>
-                        <img src="img/Vector (1).png" alt="Gestão de cursos">
-                        <a href="#gestao-de-cursos">Gestão de Cursos</a>
-                    </div>
-                </li>
-
-                <li>
-                    <div>
-                        <img src="img/Vector (2).png" alt="Gestão de turmas">
-                        <a href="#gestao-de-turmas">Gestão de Turmas</a>
-                    </div>
-                </li>
-
-                <li>
-                    <div>
-                        <img src="img/Vector (3).png" alt="Gestão de alunos">
-                        <a href="#gestao-de-alunos">Gestão de Alunos</a>
-                    </div>
-                </li>
-            </ul>
-        </nav>
-
-        <div class="barra-inferior">
-            <div class="esquerda">
-                <a href="#voltar" class="botao-voltar">
-                    <span>
-                        <img src="img/seta.png" alt="seta voltar">
-                    </span>Voltar
-                </a>
-            </div>
-
-            <div class="centro">
-                <span>Cascalho - Gestão de Conteúdo</span>
-            </div>
-
-            <div class="direita">
-                <div class="circulo-usuario">
-                    <span>Nome de Usuário</span>
-                    <a href="#sair-da-conta">Sair da Conta 
-                        <img src="img/seta contraria.png" alt="seta contraria">
-                    </a>
+<body>
+    <nav>
+        <ul>
+            <li>
+                <div>
+                    <img src="img/Vector.png" alt="Gestão de conteúdo">
+                    <a href="#gestao-de-conteudo">Gestão de Conteúdo</a>
                 </div>
-            </div>
+            </li>
+
+            <li>
+                <div>
+                    <img src="img/Vector (1).png" alt="Gestão de cursos">
+                    <a href="#gestao-de-cursos">Gestão de Cursos</a>
+                </div>
+            </li>
+
+            <li>
+                <div>
+                    <img src="img/Vector (2).png" alt="Gestão de turmas">
+                    <a href="#gestao-de-turmas">Gestão de Turmas</a>
+                </div>
+            </li>
+
+            <li>
+                <div>
+                    <img src="img/Vector (3).png" alt="Gestão de alunos">
+                    <a href="#gestao-de-alunos">Gestão de Alunos</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="barra-inferior">
+        <div class="esquerda">
+            <a href="#voltar" class="botao-voltar">
+                <span>
+                    <img src="img/seta.png" alt="seta voltar">
+                </span>Voltar
+            </a>
         </div>
 
-        <main>
-            <h2>Lista de Cursos</h2>
-            <div class="curso-container">
-                <p class="no-cursos">Ainda não há cursos para exibir</p>
-                <p class="description">Clique no botão abaixo para adicionar um curso novo à sua escola</p>
-                <button class="criar-curso">
-                    <img src="icon.png" alt="Pencil Icon" class="icon">Criar crusos
-                </button>
+        <div class="centro">
+            <span>Cascalho - Gestão de Conteúdo</span>
+        </div>
+
+        <div class="direita">
+            <div class="circulo-usuario">
+                <span>Nome de Usuário</span>
+                <a href="#sair-da-conta">Sair da Conta
+                    <img src="img/seta contraria.png" alt="seta contraria">
+                </a>
             </div>
-        </main>
-    </body>
+        </div>
+    </div>
+
+    <main>
+        <h2>Adicionar Conteúdo ao módulo</h2>
+        <div class="jogos-container">
+            <div class="inputs-e-linha">
+                <div class="input-container">
+                    <label for="nome-jogo">Procurar jogos por nome</label>
+                    <input type="text" id="nome-jogo" placeholder="Digite o nome do jogo">
+                </div>
+                <div class="input-container">
+                    <label for="tags-jogo">Procurar jogos por tags</label>
+                    <div class="tags-input-wrapper">
+                        <input type="text" id="tags-jogo" placeholder="Mostrar tags">
+                        <button class="tags-button">&#x25BC;</button> <!-- Seta para baixo -->
+                    </div>
+                </div>
+            </div>
+            <hr class="linha-preta">
+        </div>
+    </main>
+    
+</body>
+
 </html>

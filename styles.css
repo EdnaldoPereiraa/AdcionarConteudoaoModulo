@@ -173,7 +173,6 @@ nav ul li img {
 
 
 main {
-    width: 80%;
     max-width: 1200px;
     padding: 20px;
     text-align: center;
@@ -192,9 +191,9 @@ main h2 {
     
 }
 
-.curso-container {
+.jogos-container {
     background-color: #E0E0E0;
-    padding: 200px 20px;
+    padding: 20px;
     border-radius: 8px;
     border: 4px solid transparent;
     position: relative;
@@ -202,40 +201,94 @@ main h2 {
     font-weight: bold;
     color: #1C1B1F;
     margin-bottom: 10px;
+    display: flex;
+    flex-direction: column; /* Mantém os inputs e a linha na mesma coluna */
+    align-items: center; /* Alinha os elementos horizontalmente */
+    border-radius: 26px;
+    
 }
 
-.description {
-    font-size: 14px;
-    color: #5e5e5e;
-    margin-bottom: 20px;
+.inputs-e-linha {
+    display: flex; /* Para alinhar os inputs horizontalmente */
+    gap: 100px; /* Espaçamento entre os inputs */
 }
 
-.criar-curso {
-    background-color: #6a0dad;
-    color: #fff;
-    border: none;
-    border-radius: 10px;
-    padding: 13px 10px;
-    cursor: pointer;
-    position: absolute;
-    bottom: 30px;
-    right: 30px;
+.input-container {
+    flex-direction: column;
+    display: flex; /* Para alinhar os itens horizontalmente */
+    gap: 10px; /* Espaçamento entre os itens */
+    flex: 1; /* Ocupa o espaço disponível */
+    
+}
+
+.input-container label {
+    font-size: 16px;
+    font-weight: 500;
+    color: #3D3C40;
+}
+
+.input-container input {
+    padding: 15px; /* Aumenta o padding para aumentar o tamanho do input */
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 20px; /* Define as bordas ovais */
+    width: 100%; /* Ocupa todo o espaço disponível no container pai */
+    box-sizing: border-box;
+    
+    
+}
+
+
+
+
+.tags-input-wrapper {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    position: relative; /* Necessário para posicionar o botão corretamente */
 }
 
-.criar-curso:hover {
-    background-color: #5a009c;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+.tags-input-wrapper input {
+    flex-grow: 1;
+    padding-right: 40px; /* Espaço para o botão */
 }
 
-.icon {
-    width: 13px;
-    height: 15px;
-    margin-right: 8px;
-    margin-left: 5px;
+.tags-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0 10px;
+    font-size: 20px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
 }
+
+.linha-preta {
+    width: 100%;
+    height: 1px; /* Altura da linha preta */
+    background-color: #000; /* Cor da linha preta */
+    margin-top: 20px; /* Espaçamento superior */
+    margin-bottom: 20px; /* Espaçamento inferior */
+}
+
+@media (max-width: 768px) {
+    .jogos-container {
+        flex-direction: column;
+    }
+
+    .input-container {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
 
 @media (max-width: 1024px) {
     nav ul {
@@ -285,7 +338,7 @@ main h2 {
         margin-right: auto;
     }
 
-    .curso-container {
+    .jogos-container {
         padding: 100px 10px;
     }
 }
@@ -311,7 +364,7 @@ main h2 {
         width: 100%;
     }
 
-    .curso-container {
+    .jogos-container {
         padding: 80px 10px;
     }
 }
