@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gestão de Cursos</title>
+    <title>Gestão de Conteúdo</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -70,8 +70,14 @@
             <div class="inputs-e-linha">
                 <div class="input-container">
                     <label for="nome-jogo">Procurar jogos por nome</label>
-                    <input type="text" id="nome-jogo" placeholder="Digite o nome do jogo">
+                    <div class="tags-input-wrapper">
+                        <input type="text" id="nome-jogo" placeholder="Digite o nome do jogo">
+                        <button class="tags-button">
+                            <img src="img/icon lupa.png" alt="Search Icon">
+                        </button>
+                    </div>
                 </div>
+                
                 <div class="input-container">
                     <label for="tags-jogo">Procurar jogos por tags</label>
                     <div class="tags-input-wrapper">
@@ -81,6 +87,33 @@
                 </div>
             </div>
             <hr class="linha-preta">
+
+            <h3>Todos os Jogos disponíveis</h3>
+            <div class="input-novos-jogos">
+                <div class="input-container">
+                    <label for="jogo1"></label>
+                    <div class="input-with-button">
+                        <input type="text" id="jogo1" placeholder="Digite o nome do jogo">
+                        <button class="adicionar-button">+ Adicionar</button>
+                    </div>
+                </div>
+
+                <div class="input-container">
+                    <label for="jogo2"></label>
+                    <div class="input-with-button">
+                        <input type="text" id="jogo2" placeholder="Digite o nome do jogo">
+                        <button class="adicionar-button">+ Adicionar</button>
+                    </div>
+                </div>
+
+                <div class="input-container">
+                    <label for="jogo3"></label>
+                    <div class="input-with-button">
+                        <input type="text" id="jogo3" placeholder="Digite o nome do jogo">
+                        <button class="adicionar-button">+ Adicionar</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
     
