@@ -17,7 +17,7 @@ body {
 }
 
 nav {
-    width: Fixed (1,280px)px;
+    
     height: Hug (82px)px;
     top: 26px;
     padding: 0px 8px 0px 8px;
@@ -26,17 +26,27 @@ nav {
     background: linear-gradient(0deg, #1C1B1F, #1C1B1F), linear-gradient(0deg, rgba(208, 188, 255, 0.08), rgba(208, 188, 255, 0.08));
 }
 
+nav ul {
+    display: flex; /* Define ul como um contêiner flexível */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    list-style: none; /* Remove os marcadores da lista */
+    padding: 0; /* Remove o padding padrão */
+    margin: 0; /* Remove a margem padrão */
+}
+
 nav li {
     display: inline-block;
     margin-right: 95px; 
     width: 210px;
-    height: Hug (80px)px;
-    padding: 12px 0px 16px 0px;
+    padding: 15px 0px 0px 0px; /* Reduzido o padding inferior */
     gap: 4px;
+    height: auto;
     opacity: 0px;
     align-items: center;
     
 }
+
+
 
 
 
@@ -49,6 +59,7 @@ nav a {
     text-decoration: none;
     padding: 40px 40px;
     margin-left: 100px;
+    
 }
 
 nav a:hover {
@@ -60,7 +71,11 @@ nav a:hover {
     opacity: 0px;
 }
 
+
+
+
 nav ul li div {
+    margin-top: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
