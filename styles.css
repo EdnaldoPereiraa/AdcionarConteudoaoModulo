@@ -220,6 +220,78 @@ main h2 {
     text-align: left;
 }
 
+
+.tags-input-wrapper {
+    position: relative;
+}
+
+.options-container {
+    display: none;
+    position: absolute;
+    top: 100%; /* Posiciona abaixo do input */
+    left: 0;
+    width: 100%;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    box-shadow: 0px 10px 17px 0px #00000063;
+    z-index: 1;
+}
+
+
+.options-container label {
+    display: block;
+    padding: 10px;
+    cursor: pointer;
+    
+}
+
+.options-container label:hover {
+    background-color: #f0f0f0;
+}
+
+.tags-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0 10px;
+    font-size: 20px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+
+.options-container input[type="checkbox"] {
+    margin-left: 90%;
+    width: 20px;
+    height: 20px;
+    gap: 20px;
+    opacity: 0px;
+
+}
+
+
+.tags-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0 10px;
+    font-size: 20px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+
+
+
+
+
 .inputs-e-linha {
     display: flex; /* Para alinhar os inputs horizontalmente */
     gap: 100px; /* Espaçamento entre os inputs */
@@ -231,6 +303,32 @@ main h2 {
     gap: 10px; /* Espaçamento entre os itens */
     flex: 1; /* Ocupa o espaço disponível */
     
+}
+
+.input-with-button {
+    position: relative; /* Adicionado para posicionar o botão corretamente */
+}
+
+.input-with-button input {
+    padding-right: 100px; /* Espaço para o botão dentro do input */
+}
+
+.adicionar-button {
+    position: absolute;
+    right: 80px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    background: #E8DEF8;
+
+
+}
+
+.adicionar-button:hover {
+    background-color: #e8def8a2;
 }
 
 .input-container label {
@@ -288,21 +386,6 @@ linear-gradient(0deg, rgba(113, 90, 174, 0.11), rgba(113, 90, 174, 0.11));
 }
 
 
-
-
-
-.tags-button {
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 0 10px;
-    font-size: 20px;
-    position: absolute;
-    right: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
 .linha-preta {
     width: 100%;
     height: 1px; /* Altura da linha preta */
@@ -311,131 +394,3 @@ linear-gradient(0deg, rgba(113, 90, 174, 0.11), rgba(113, 90, 174, 0.11));
     margin-bottom: 20px; /* Espaçamento inferior */
 }
 
-@media (max-width: 768px) {
-    .jogos-container {
-        flex-direction: column;
-    }
-
-    .input-container {
-        width: 100%;
-    }
-}
-
-
-
-
-
-
-
-
-
-@media (max-width: 1024px) {
-    nav ul {
-        justify-content: space-around;
-    }
-
-    nav li {
-        margin-right: 10px;
-        width: auto;
-        height: auto;
-        padding: 10px 0;
-    }
-
-    .circulo-usuario {
-        padding: 10px;
-    }
-
-    .circulo-usuario span {
-        padding-right: 5px;
-    }
-
-    .circulo-usuario a {
-        padding-left: 5px;
-    }
-
-    .esquerda .botao-voltar {
-        margin-left: 5px;
-        width: 80px;
-        height: 30px;
-        line-height: 30px;
-    }
-
-    .esquerda .botao-voltar span {
-        margin-right: 10px;
-    }
-
-    .esquerda .botao-voltar span img {
-        width: 12px;
-        height: 12px;
-        margin-left: 10px;
-        margin-right: -5px;
-    }
-
-    main {
-        width: 90%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .jogos-container {
-        padding: 100px 10px;
-    }
-}
-
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    nav li {
-        width: 100%;
-        margin-right: 0;
-        text-align: center;
-        padding: 10px 0;
-    }
-
-    nav a {
-        padding: 20px;
-    }
-
-    main {
-        width: 100%;
-    }
-
-    .jogos-container {
-        padding: 80px 10px;
-    }
-}
-
-@media (max-width: 480px) {
-    .barra-inferior {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .esquerda .botao-voltar {
-        width: 100%;
-        margin: 10px 0;
-    }
-
-    .circulo-usuario {
-        flex-direction: column;
-        align-items: center;
-        padding: 10px;
-    }
-
-    .circulo-usuario span {
-        border: none;
-        padding-right: 0;
-    }
-
-    .circulo-usuario a {
-        padding-left: 0;
-        margin-top: 5px;
-    }
-
-    .circulo-usuario a img {
-        margin-left: 0;
-    }
-}
