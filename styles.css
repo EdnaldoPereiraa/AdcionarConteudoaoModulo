@@ -328,6 +328,24 @@ main h2 {
     padding-right: 100px; /* Espaço para o botão dentro do input */
 }
 
+.input-with-icon {
+    position: relative;
+}
+
+.input-icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px; /* Ajuste o tamanho conforme necessário */
+    height: 40px; /* Ajuste o tamanho conforme necessário */
+}
+
+.input-with-icon input {
+    padding-left: 40px; /* Ajuste o padding para dar espaço para o ícone */
+    padding-right: 100px; /* Espaço para o botão dentro do input */
+}
+
 .adicionar-button {
     position: absolute;
     right: 80px;
@@ -357,6 +375,7 @@ main h2 {
 #nome-jogo{
     background: linear-gradient(0deg, #fffbfe9f, #fffbfe9c),
 linear-gradient(0deg, rgba(113, 90, 174, 0.11), rgba(113, 90, 174, 0.11));
+    border-radius: 20px;
 
 }
 
@@ -365,9 +384,11 @@ linear-gradient(0deg, rgba(113, 90, 174, 0.11), rgba(113, 90, 174, 0.11));
     padding: 15px; /* Aumenta o padding para aumentar o tamanho do input */
     font-size: 16px;
     border: 1px solid #ccc;
-    border-radius: 20px; /* Define as bordas ovais */
+    border-radius: 15px; /* Define as bordas ovais */
     box-sizing: border-box;   
+
 }
+
 
 
 .tags-input-wrapper {
@@ -391,12 +412,14 @@ linear-gradient(0deg, rgba(113, 90, 174, 0.11), rgba(113, 90, 174, 0.11));
     
 }
 
+
+
 .input-novos-jogos input {
     width: 100%; /* Faz com que os inputs ocupem 100% do contêiner */
     padding: 15px;
     font-size: 16px;
     border: 1px solid #ccc;
-    border-radius: 20px; /* Define as bordas ovais */
+    border-radius: 15px; /* Define as bordas ovais */
     box-sizing: border-box;   
 }
 
