@@ -172,7 +172,7 @@ nav ul li img {
 }
 
 .esquerda .botao-voltar span {
-    margin-right: 25px; 
+    margin-right: 20px; 
 }
 
 .esquerda .botao-voltar img {
@@ -320,45 +320,52 @@ main h2 {
     
 }
 
-.input-with-button {
-    position: relative; /* Adicionado para posicionar o botão corretamente */
-}
+
 
 .input-with-button input {
     padding-right: 100px; /* Espaço para o botão dentro do input */
 }
 
 .input-with-icon {
-    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 4px; /* Espaçamento interno */
+    border: none;
+    background-color: #fff; /* Cor de fundo branco */
+    border-radius: 15px; /* Bordas arredondadas */
 }
 
 .input-icon {
-    position: absolute;
-    left: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 40px; /* Ajuste o tamanho conforme necessário */
-    height: 40px; /* Ajuste o tamanho conforme necessário */
+    margin-right: 8px; /* Espaço entre o ícone e o campo de texto */
+    margin-left: 10px;
+    width: 50px; /* Largura do ícone */
+    height: 50px; /* Altura do ícone */
+
 }
 
+
+
 .input-with-icon input {
-    padding-left: 40px; /* Ajuste o padding para dar espaço para o ícone */
-    padding-right: 100px; /* Espaço para o botão dentro do input */
+    border: none; /* Remove a borda padrão do input */
+    outline: none; /* Remove o contorno ao focar */
+    flex: 1; /* Permite que o input ocupe o espaço restante */
+    padding: 4px; /* Espaçamento interno */
+    background-color: transparent; /* Torna o fundo do input transparente */
+    box-shadow: none; /* Remove qualquer sombra/borda do input */
+    
 }
 
 .adicionar-button {
-    position: absolute;
-    right: 80px;
-    top: 50%;
-    transform: translateY(-50%);
     border: none;
-    padding: 10px 20px;
+    padding: 10px 35px;
     border-radius: 10px;
     cursor: pointer;
     background: #E8DEF8;
+    margin-right: 100px;
 
 
 }
+
 
 .adicionar-button:hover {
     background-color: #e8def8a2;
@@ -376,25 +383,26 @@ main h2 {
     background: linear-gradient(0deg, #fffbfe9f, #fffbfe9c),
 linear-gradient(0deg, rgba(113, 90, 174, 0.11), rgba(113, 90, 174, 0.11));
     border-radius: 20px;
+    
 
 }
+
 
 
 .input-container input {
     padding: 15px; /* Aumenta o padding para aumentar o tamanho do input */
     font-size: 16px;
-    border: 1px solid #ccc;
+    border: none; /* Remove a borda */
     border-radius: 15px; /* Define as bordas ovais */
     box-sizing: border-box;   
 
 }
 
-
-
 .tags-input-wrapper {
     display: flex;
     align-items: center;
     position: relative; /* Necessário para posicionar o botão corretamente */
+    width: 90%; 
 }
 
 .tags-input-wrapper input {
@@ -418,7 +426,7 @@ linear-gradient(0deg, rgba(113, 90, 174, 0.11), rgba(113, 90, 174, 0.11));
     width: 100%; /* Faz com que os inputs ocupem 100% do contêiner */
     padding: 15px;
     font-size: 16px;
-    border: 1px solid #ccc;
+    border: none; /* Remove a borda */
     border-radius: 15px; /* Define as bordas ovais */
     box-sizing: border-box;   
 }
@@ -432,3 +440,92 @@ linear-gradient(0deg, rgba(113, 90, 174, 0.11), rgba(113, 90, 174, 0.11));
     margin-bottom: 20px; /* Espaçamento inferior */
 }
 
+
+@media (max-width: 1024px) {
+    .adicionar-button {
+        padding: 8px 20px;
+        font-size: 12px;
+    }
+
+    .circulo-usuario span,
+    .circulo-usuario a {
+        font-size: 12px;
+    }
+
+    nav a {
+        font-size: 12px;
+    }
+
+    main h2, .jogos-container h3 {
+        font-size: 18px;
+    }
+
+    .input-container label {
+        font-size: 14px;
+    }
+
+    .jogos-container {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .inputs-e-linha {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .esquerda .botao-voltar {
+        margin-left: 0;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .circulo-usuario {
+        width: 100%;
+        justify-content: center;
+    }
+
+    main {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .barra-inferior {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .adicionar-button {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        gap: 20px;
+    }
+
+    .esquerda .botao-voltar {
+        font-size: 12px;
+    }
+
+    .input-container label,
+    .input-with-icon input {
+        font-size: 12px;
+    }
+
+    .jogos-container {
+        font-size: 14px;
+    }
+
+    .centro {
+        font-size: 14px;
+    }
+}
