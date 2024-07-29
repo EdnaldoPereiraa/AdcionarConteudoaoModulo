@@ -108,6 +108,10 @@ nav ul li img {
     font-weight: 500;
 }
 
+.esquerda {
+    margin-right: 80px; /* Optional: Adjust margin for better spacing */
+}
+
 .centro {
     gap: 0px;
     opacity: 0px;
@@ -117,6 +121,7 @@ nav ul li img {
     text-align: center;
 }
 
+
 .circulo-usuario {
     display: flex;
     align-items: center;
@@ -125,7 +130,7 @@ nav ul li img {
     border-radius: 64.68px ; 
     width: auto;
     height: auto;
-    padding: 15px; 
+    padding: 10px; 
     margin-bottom: 5px; 
     margin-left: 10px; 
     margin-right: 100px; 
@@ -156,10 +161,10 @@ nav ul li img {
 .esquerda .botao-voltar {
     display: flex;
     align-items: center;
-    margin-left: 110px; 
+    margin-left: 170px; 
     font-size: 14px;
     width: 100px;
-    height: 40px;
+    height: 38px;
     border-radius: 64.68px;
     background-color: #6750A4;
     color: #FFFFFF;
@@ -170,6 +175,8 @@ nav ul li img {
     border: none;
     cursor: pointer;
 }
+
+
 
 .esquerda .botao-voltar span {
     margin-right: 20px; 
@@ -238,25 +245,28 @@ main h2 {
 
 .tags-input-wrapper {
     position: relative;
+    width: 100%; /* Ensure it spans the full width */
 }
 
 .options-container {
-    display: none;
+    display: none; /* Hidden by default */
     position: absolute;
-    top: 100%; /* Posiciona abaixo do input */
+    top: 100%; /* Positions the dropdown below the input */
     left: 0;
-    width: 100%;
+    right: 0; /* Ensures it takes the full width */
+    max-height: 300px; /* Limit the height of the dropdown */
+    overflow-y: auto; /* Adds scroll for overflow */
     background-color: white;
     border: 1px solid #ccc;
-    border-radius: 20px;
-    box-shadow: 0px 10px 17px 0px #00000063;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15); /* Subtle shadow */
     z-index: 1;
 }
 
 
 .options-container label {
     display: block;
-    padding: 10px;
+    padding: 5px;
     cursor: pointer;
     
 }
@@ -287,25 +297,6 @@ main h2 {
     opacity: 0px;
 
 }
-
-
-.tags-button {
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 0 10px;
-    font-size: 20px;
-    position: absolute;
-    right: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-
-
-
-
-
 
 .inputs-e-linha {
     display: flex; /* Para alinhar os inputs horizontalmente */
