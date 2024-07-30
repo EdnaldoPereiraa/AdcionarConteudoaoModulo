@@ -246,6 +246,7 @@ main h2 {
 .tags-input-wrapper {
     position: relative;
     width: 100%; /* Ensure it spans the full width */
+    
 }
 
 .options-container {
@@ -257,19 +258,25 @@ main h2 {
     max-height: 300px; /* Limit the height of the dropdown */
     overflow-y: auto; /* Adds scroll for overflow */
     background-color: white;
-    border: 1px solid #ccc;
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15); /* Subtle shadow */
+    border: 0px;
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.15); /* Subtle shadow */
     z-index: 1;
+    
+    
 }
 
 
 .options-container label {
-    display: block;
-    padding: 5px;
+    display: flex;
+    align-items: center;
+    position: relative; /* Permite o uso de position: absolute para o checkbox */
+    padding: 10px;
     cursor: pointer;
-    
+    padding-right: 40px; /* Espaço para o checkbox */
 }
+
+
 
 .options-container label:hover {
     background-color: #f0f0f0;
@@ -285,18 +292,36 @@ main h2 {
     right: 10px;
     top: 50%;
     transform: translateY(-50%);
+    
+}
+.tags-button .arrow {
+    display: inline-block;
+    font-size: 25px; /* Tamanho do texto da seta */
+    transform: scale(1, 0.6); /* Achata a seta verticalmente */
+    transition: transform 0.3s; /* Animação de transição suave */
+}
+.arrow {
+    display: inline-block;
+    transition: transform 0.3s ease; /* Transição suave da rotação */
+    color: #6750A4; /* Cor da seta */
 }
 
+/* Classe para rotação da seta para cima */
+.arrow.active {
+    transform: rotate(180deg); /* Rotaciona a seta 180 graus */
+}
 
 
 .options-container input[type="checkbox"] {
-    margin-left: 90%;
+    position: absolute;
+    right: 10px; /* Distância do lado direito */
     width: 20px;
     height: 20px;
-    gap: 20px;
-    opacity: 0px;
+    accent-color: #6750A4; /* Cor do checkbox */
 
 }
+
+
 
 .inputs-e-linha {
     display: flex; /* Para alinhar os inputs horizontalmente */
@@ -315,6 +340,7 @@ main h2 {
 
 .input-with-button input {
     padding-right: 100px; /* Espaço para o botão dentro do input */
+    
 }
 
 .input-with-icon {
