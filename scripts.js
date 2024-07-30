@@ -20,3 +20,4 @@ function toggleOptions() {
         arrow.classList.remove('active');
     }
 }
+

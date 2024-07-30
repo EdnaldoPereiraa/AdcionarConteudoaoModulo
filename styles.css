@@ -14,7 +14,9 @@ body {
     flex-direction: column;
     gap: 30px;
     
+    
 }
+
 
 nav {
     
@@ -308,7 +310,8 @@ main h2 {
 
 /* Classe para rotação da seta para cima */
 .arrow.active {
-    transform: rotate(180deg); /* Rotaciona a seta 180 graus */
+    transform: rotate(180deg) scale(1, 0.6); /* Rotaciona e achata a seta */
+
 }
 
 
@@ -388,12 +391,26 @@ main h2 {
     background-color: #e8def8a2;
 }
 
+.adicionar-button img {
+    margin-right: 5px; /* Espaço entre a imagem e o texto */
+    width: 12px; /* Ajuste o tamanho conforme necessário */
+    height: 12px;
+}
+
 .input-container label {
     font-size: 16px;
     font-weight: 500;
-    color: #403e3c;
+    color: #000000; /* Define a cor dos labels como preto */
     text-align: left;
     
+}
+
+#nome-jogo::placeholder {
+    color: #403e3c;
+}
+
+::placeholder {
+    color: #000000; /* Define a cor dos placeholders como preto */
 }
 
 #nome-jogo{
@@ -458,9 +475,12 @@ linear-gradient(0deg, rgba(113, 90, 174, 0.11), rgba(113, 90, 174, 0.11));
 }
 
 
+
+
+
 @media (max-width: 1024px) {
     .adicionar-button {
-        padding: 8px 20px;
+        padding: 4px 10px;
         font-size: 12px;
     }
 
@@ -499,7 +519,7 @@ linear-gradient(0deg, rgba(113, 90, 174, 0.11), rgba(113, 90, 174, 0.11));
 
     .esquerda .botao-voltar {
         margin-left: 0;
-        width: 100%;
+        width: 150%;
         justify-content: center;
     }
 
